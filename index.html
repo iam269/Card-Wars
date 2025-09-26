@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Wars</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="card.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Card Wars</h1>
+      <h3>You VS Computer</h3>
+      <div class="cards">
+        <div>
+          <h2>You</h2>
+          <img
+            id="player-card"
+            src="https://deckofcardsapi.com/static/img/back.png"
+            alt="Player Card"
+          />
+        </div>
+        <div>
+          <h2>Computer</h2>
+          <img
+            id="computer-card"
+            src="https://deckofcardsapi.com/static/img/back.png"
+            alt="Computer Card"
+          />
+        </div>
+      </div>
+      <button onclick="drawCards()">Draw Cards</button>
+      <div class="scoreboard">
+        🧍Your Score: <span id="player-score">0</span><br />
+        🤖 Computer Score: <span id="computer-score">0</span>
+      </div>
+      <div class="result" id="result-text"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
